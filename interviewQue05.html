@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Given two strings, return true if they are anagrams of one another
+    </title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let first = "Mary";
+  let second = "Army";
+  console.log("@SN ", checkAnagrams(first, second));
+  function checkAnagrams(a, b) {
+    let m = a.toLowerCase();
+    let n = b.toLowerCase();
+
+    m = m.split("").sort().join("");
+    n = n.split("").sort().join("");
+
+    return m === n;
+  }
+</script>
